@@ -9,7 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="background_main">#050B18</color>
-    <color name="text_main">#FFFFFFFF</color>
+    <color name="text_p1">#FFFFFFFF</color>
     <color name="text_p3">#45454D</color>
     <color name="text_p2"> #B3EEF2FB</color>
     <color name="rating_starts">#F4D144</color>

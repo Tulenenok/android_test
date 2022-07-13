@@ -5,5 +5,7 @@
     <string name="tag_1">MOBA</string>
     <string name="tag_2">MULTIPLAYER</string>
     <string name="tag_3">STRATEGY</string>
+    <string name="review_rati">Review &amp; Ratings</string>
+
     <string name="desc">Dota 2 is a multiplayer online battle arena (MOBA) game which has two teams of five players compete to collectively destroy a large structure defended by the opposing team known as the "Ancient", whilst defending their own.</string>
 </resources>

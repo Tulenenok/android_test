@@ -19,6 +19,25 @@
         <item name="android:textSize">14dp</item>
         <item name="android:textColor">@color/text_p2</item>
         <item name="android:fontFamily">@font/sk_modernist_regular</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="android:translationY">-2.3sp</item>
+    </style>
+
+    <style name="TextViewP1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/sk_modernist_bold</item>
+        <item name="android:textColor">@color/text_p1</item>
+    </style>
+
+    <style name="ButtonTag">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35dp</item>
+
+        <item name="android:background">@drawable/buttonshape</item>
+        <item name="android:fontFamily">@font/montserrat_subrayada</item>
+        <item name="android:textColor">#44A9F4</item>
+        <item name="android:textSize">12sp</item>
     </style>
 
 
