@@ -39,6 +39,12 @@
         <item name="android:textColor">@color/text_p1</item>
     </style>
 
+    <style name="CircleTag">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:backgroundTint">@drawable/oval</item>
+    </style>
+
     <style name="ButtonTag">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">35dp</item>

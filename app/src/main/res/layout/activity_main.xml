@@ -13,6 +13,7 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="55dp">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,51 +33,79 @@
                     android:scaleY="1.4"
                     app:srcCompat="@drawable/cover_image" />
 
-                <Button
-                    android:id="@+id/return_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp">
 
-                <Button
-                    android:id="@+id/more_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
+                    <Button
+                        android:id="@+id/more_btn"
+                        android:layout_width = "65dp"
+                        android:layout_height = "65dp"
+                        android:background = "@drawable/oval"
+                        android:layout_alignParentEnd="true"/>
+
+                    <Button
+                        android:id="@+id/return_btn"
+                        android:layout_width = "65dp"
+                        android:layout_height = "65dp"
+                        android:background = "@drawable/oval"
+                        android:layout_alignParentStart="true"/>
+                </RelativeLayout>
 
             </FrameLayout>
 
-            <FrameLayout
-                android:id="@+id/name_frame"
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:paddingLeft="150dp"
-                android:paddingTop="22dp">
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="15dp">
 
-                <TextView
-                    android:id="@+id/name"
-                    style="@style/TextViewP1"
+                <ImageView
+                    android:id="@+id/logo_image"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/logo_image" />
 
-                    android:text="@string/base_name"
-                    android:textSize="20sp" />
+                <FrameLayout
+                    android:id="@+id/name_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="101dp"
+                    android:paddingLeft="130dp"
+                    android:paddingTop="15dp">
 
-                <TextView
-                    android:id="@+id/gradeCnt"
-                    style="@style/TextViewP3"
+                    <TextView
+                        android:id="@+id/name"
+                        style="@style/TextViewP1"
 
-                    android:paddingLeft="109dp"
-                    android:paddingTop="32dp"
-                    android:text="@string/gradeCnt"
-                    android:textSize="16dp" />
+                        android:text="@string/base_name"
+                        android:textSize="20sp" />
 
-                <RatingBar
-                    android:id="@+id/ratingBar"
-                    android:layout_width="240dp"
-                    android:layout_height="45dp"
-                    android:layout_marginTop="31dp"
-                    android:theme="@style/SiriusRatingBar"
-                    />
-            </FrameLayout>
+                    <TextView
+                        android:id="@+id/gradeCnt"
+                        style="@style/TextViewP3"
+
+                        android:paddingLeft="109dp"
+                        android:paddingTop="32dp"
+                        android:text="@string/gradeCnt"
+                        android:textSize="16dp" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="240dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="31dp"
+                        android:theme="@style/SiriusRatingBar" />
+                </FrameLayout>
+
+
+            </RelativeLayout>
 
             <FrameLayout
                 android:id="@+id/tags_frame"
