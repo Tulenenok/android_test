@@ -12,10 +12,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        var smallRatingBar: RatingBar = findViewById(R.id.ratingBar)
-//        smallRatingBar.max = 5
-//        smallRatingBar.numStars = 5
-//        smallRatingBar.setRating(5.toFloat())
-       // findViewById(R.id.ratingBar).setIsIndicator(true)
     }
 }

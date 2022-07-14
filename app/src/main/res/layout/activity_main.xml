@@ -32,6 +32,18 @@
                     android:scaleY="1.4"
                     app:srcCompat="@drawable/cover_image" />
 
+                <Button
+                    android:id="@+id/return_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/more_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+
             </FrameLayout>
 
             <FrameLayout
@@ -59,17 +71,11 @@
 
                 <RatingBar
                     android:id="@+id/ratingBar"
-                    android:layout_width="wrap_content"
+                    android:layout_width="240dp"
                     android:layout_height="45dp"
                     android:layout_marginTop="31dp"
-                    android:isIndicator="true"
-                    android:max="5"
-                    android:numStars="5"
-                    android:rating="5"
-                    android:scaleX=".4"
-                    android:scaleY=".4"
                     android:theme="@style/SiriusRatingBar"
-                    android:transformPivotX="0dp" />
+                    />
             </FrameLayout>
 
             <FrameLayout
@@ -101,16 +107,9 @@
 
             <FrameLayout
                 android:id="@+id/description_frame"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="top"
-                android:lineSpacingExtra="5sp"
-                android:paddingStart="20dp"
-                android:paddingRight="20sp"
-                android:paddingTop="25dp"
-                android:text="@string/desc"
-                android:textColor="@color/text_p2"
                 android:translationY="-2.3sp"
+                style="@style/BaseFrame"
+                android:paddingTop = "25dp"
                 tools:ignore="RtlSymmetry">
 
                 <TextView
@@ -121,16 +120,151 @@
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                style="@style/BaseFrame"
+                android:paddingTop = "20dp"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:id="@+id/review_rati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewP1"
+                    android:text="@string/review_rati"
+                    android:textSize="19dp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/BaseFrame"
+                android:paddingTop = "12dp"
+                tools:ignore="RtlSymmetry">
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    style="@style/TextViewP1"
+                    android:text="@string/rati"
+                    android:textSize="58dp"/>
+
+                <RatingBar
+                    android:id="@+id/ratingBar2"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="101dp"
+                    android:layout_marginTop="12dp"
+                    android:theme="@style/SiriusRatingBar" />
+
+                <TextView
+                    android:id="@+id/gradeCnt_review"
+                    style="@style/TextViewP3"
+
+                    android:paddingLeft="101dp"
+                    android:paddingTop="39dp"
+                    android:text="@string/m_reviews"
+                    android:textSize="16dp" />
+
             </FrameLayout>
 
+            <FrameLayout
+                style="@style/BaseFrame"
+                android:layout_width="match_parent"
+
+                android:paddingTop = "18dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/line"
+                    android:layout_width="360dp"
+                    android:layout_height="0.5dp"
+                    android:width="301dp"
+                    android:background="#ffffff"
+                    android:text="" />
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/BaseFrame"
+                android:layout_width="match_parent"
+
+                android:paddingTop = "25dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/author_1"
+                    android:gravity="top"
+                    style="@style/TextViewP2"
+                    android:textColor="@color/text_p1"
+                    android:text="@string/author_1"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="80dp"/>
+
+                <TextView
+                    android:id="@+id/data_1"
+                    android:gravity="top"
+                    style="@style/TextViewP3"
+                    android:text="@string/data_1"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="24dp"/>
+
+                <TextView
+                    android:id="@+id/feedback_1"
+                    android:gravity="top"
+                    style="@style/TextViewP2"
+                    android:text="@string/feedback_1"
+                    android:layout_marginTop="58dp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/BaseFrame"
+                android:layout_width="match_parent"
+
+                android:paddingTop = "25dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/author_2"
+                    android:gravity="top"
+                    style="@style/TextViewP2"
+                    android:textColor="@color/text_p1"
+                    android:text="@string/author_2"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="80dp"/>
+
+                <TextView
+                    android:id="@+id/data_2"
+                    android:gravity="top"
+                    style="@style/TextViewP3"
+                    android:text="@string/data_2"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="24dp"/>
+
+                <TextView
+                    android:id="@+id/feedback_2"
+                    android:gravity="top"
+                    style="@style/TextViewP2"
+                    android:text="@string/feedback_1"
+                    android:layout_marginTop="58dp"/>
+            </FrameLayout>
+
+        <FrameLayout
+            style="@style/BaseFrame"
+            android:layout_width="match_parent"
+
+            android:paddingTop = "30dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="@string/install_button"
+                android:fontFamily="@font/sk_modernist_bold"
+                android:textColor="#050B18"
+                android:backgroundTint="#F4D144"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                />
+
+        </FrameLayout>
         </LinearLayout>
     </ScrollView>
 
